@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="544.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientGUI.ClientLoginController">
+   <children>
+      <Label alignment="TOP_CENTER" prefHeight="103.0" prefWidth="878.0" text="ACCOUNT LOGIN" textFill="#a12525">
+         <font>
+            <Font name="Arial Bold" size="96.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="account" prefHeight="97.0" prefWidth="866.0" promptText="5 Digit Account Number">
+         <font>
+            <Font size="53.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </TextArea>
+      <PasswordField fx:id="pass" alignment="CENTER" prefHeight="126.0" prefWidth="866.0" promptText="PASSWORD">
+         <font>
+            <Font size="66.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </PasswordField>
+      <Button fx:id="LOGIN" mnemonicParsing="false" onMouseClicked="#loginCheck" prefHeight="102.0" prefWidth="866.0" text="LOGIN" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Yu Gothic Light" size="33.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>

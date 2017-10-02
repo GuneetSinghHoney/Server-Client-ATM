@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientGUI.ClientPanelController">
+   <children>
+      <HBox prefHeight="49.0" prefWidth="600.0">
+         <children>
+            <Label text="CURRENT BALANCE:" textFill="#542828">
+               <font>
+                  <Font name="Arial" size="33.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="bal" textAlignment="CENTER" textFill="#da0f0f">
+               <font>
+                  <Font name="Arial" size="33.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <TextField fx:id="amount" alignment="CENTER" prefHeight="121.0" prefWidth="600.0" promptText="AMOUNT">
+         <font>
+            <Font size="49.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="deposit" mnemonicParsing="false" onMouseClicked="#depositeMoney" text="DEPOSIT" textFill="#2d9a41">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Button>
+            <Button fx:id="withdraw" mnemonicParsing="false" onMouseClicked="#withdrawMoney" prefHeight="101.0" prefWidth="338.0" text="WITHDRAW " textFill="#e80000">
+               <font>
+                  <Font size="45.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

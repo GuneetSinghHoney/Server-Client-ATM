@@ -1,0 +1,30 @@
+package ClientGUI;
+
+import Connection.Client;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+public class StartClient extends Application {
+
+
+	public void push(String args[])
+	{
+		launch(args);
+	}
+
+	@Override
+	public void start(Stage stage) throws Exception {
+
+	Parent root = FXMLLoader.load(getClass().getResource("ClientLogin.fxml"));
+	Scene scene = new Scene(root,1000,1000);
+	stage.setTitle("CENTENNIAL BANK");
+	stage.setScene(scene);
+	stage.show();
+	
+	
+		
+	}
+
+}
